@@ -155,8 +155,8 @@ if (sessionUserId) {
                                     .then(data => {
                                         const requestedPet = data
                                         petname = requestedPet.name
-                                        console.log(petname)
-                                        console.log(requesterName)
+                                        // console.log(petname)
+                                        // console.log(requesterName)
                                         document.querySelector("#notif_list ul").innerHTML += `<li><a href="./viewPet.html?petId=${notify.requestedPetId}&requesterId=${notify.requestedUserId}"><b>${requesterName}</b> requested your pet <b>${petname}</b></a></li>`
                                     }).catch(error => {
                                         console.error("Error fetching pets:", error);
